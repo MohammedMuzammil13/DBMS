@@ -43,7 +43,7 @@ CREATE TABLE student (
 );
 
 INSERT INTO student (RegisterNumber, Name, Age, Address, PhoneNumber)
-VALUES (1, 'John Doe', 20, '123 Main St, Cityville', '123-456-7890'), (2, 'Jane Smith', 22, '456 Elm St, Townsville', '987-654-3210');
+VALUES (101, 'Muzammil', 20, '123 Main St, Chennai', '9894499260'), (102, 'Prem', 20, '4 St, Salem', '9763457820');
 ```
 ### OUTPUT:
 ![Screenshot 2024-03-13 112011](https://github.com/MohammedMuzammil13/DBMS/assets/119291664/628c2d3e-2cb0-423f-854f-36024b94a826)
