@@ -13,12 +13,70 @@
 5. Specify attributes unique, multivalued and composite attributes.
 
 ### ER Diagram 
+![image (2)](https://github.com/DrUmaRaniV/DBMS/assets/119291664/42f50213-13b9-4fc4-92e4-f606bc831d65)
+
 
 
 ### Relational model
+![image (3)](https://github.com/DrUmaRaniV/DBMS/assets/119291664/cabc3488-1f80-4264-8f71-12ca7f18cd18)
+
 
 
 ### SQL DDL Schema 
+```
+CREATE TABLE College
+(
+  CName INT NOT NULL,
+  COffice INT NOT NULL,
+  CPhone INT NOT NULL,
+  PRIMARY KEY (CName)
+);
+
+CREATE TABLE Instructor
+(
+  Id INT NOT NULL,
+  Name INT NOT NULL,
+  Phone INT NOT NULL,
+  PRIMARY KEY (Id),
+  UNIQUE (Phone)
+);
+
+CREATE TABLE Department
+(
+  DName INT NOT NULL,
+  DCode INT NOT NULL,
+  PRIMARY KEY (DName),
+  UNIQUE (DCode)
+);
+
+CREATE TABLE Student
+(
+  Name INT NOT NULL,
+  Id INT NOT NULL,
+  Phone INT NOT NULL,
+  Address INT NOT NULL,
+  PRIMARY KEY (Id),
+  UNIQUE (Phone)
+);
+
+CREATE TABLE Section
+(
+  Sem INT NOT NULL,
+  SecID INT NOT NULL,
+  SecNo INT NOT NULL,
+  Year INT NOT NULL,
+  PRIMARY KEY (SecID)
+);
+
+CREATE TABLE Course
+(
+  CCode INT NOT NULL,
+  Credits INT NOT NULL,
+  CoName INT NOT NULL,
+  PRIMARY KEY (CCode),
+  UNIQUE (CoName)
+);
+```
 
 ## RESULT 
 <div align="justify">
