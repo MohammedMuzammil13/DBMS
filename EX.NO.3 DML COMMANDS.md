@@ -1,4 +1,4 @@
-# EX 2 Data Manipulation Language (DML) Commands and built in functions in SQL
+# EX 3 Data Manipulation Language (DML) Commands and built in functions in SQL
 ## AIM:
 To create a manager database and execute DML queries using SQL.
 
@@ -28,30 +28,53 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 ### Q1) Update all the records of manager table by increasing 10% of their salary as bonus.
 
 ### QUERY:
-
+```
+UPDATE manager
+SET salary = salary + (salary * 0.1),
+    annualsalary = annualsalary + (annualsalary * 0.1)
+```
 
 ### OUTPUT:
+![Screenshot 2024-03-20 101913](https://github.com/MohammedMuzammil13/DBMS/assets/119291664/c5ecd073-7551-4796-b0b0-cf3d16bad933)
+
+
 
 ### Q2) Delete the records from manager table where the salary less than 2750.
 
 
 ### QUERY:
+```
+DELETE FROM manager
+WHERE salary < 2750;
+```
 
 
 ### OUTPUT:
+![Screenshot 2024-03-20 102141](https://github.com/MohammedMuzammil13/DBMS/assets/119291664/a53d710c-a7b8-4d90-af21-36585fb6d2ce)
+
 
 ### Q3) Display each name of the employee as “Name” and annual salary as “Annual Salary” (Note: Salary in emp table is the monthly salary)
 
 
 ### QUERY:
-
-
+```
+select ename as "Name", salary * 12 as "Annual Salary"
+from manager;
+```
 ### OUTPUT:
+![Screenshot 2024-03-20 102943](https://github.com/MohammedMuzammil13/DBMS/assets/119291664/21b2ff0a-ff7a-496e-a4e0-5b557f743e61)
+
+
 
 ### Q5)	List the names of Clerks from emp table.
 
 
 ### QUERY:
+```
+SELECT ename
+FROM emp
+WHERE job = 'clerk';
+```
 
 
 ### OUTPUT:
