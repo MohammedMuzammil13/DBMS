@@ -100,80 +100,53 @@ WHERE employee_id = 3;
 
 
 ### QUERY:
-```python
-sql
-select * from employee;
-rollback to s2;
-```
+
 
 ### OUTPUT:
-![image](https://github.com/Lakshmipriya2005/DBMS/assets/115525361/b66b2852-7cbc-49e6-a059-579485f3ff49)
 
 
 ### Q9) Display the employee table and commit the changes; 
 
 
 ### QUERY:
-```python
-sql
-select * from employee;
-commit;
-```
+
 
 ### OUTPUT:
-![image](https://github.com/Lakshmipriya2005/DBMS/assets/115525361/7dd55645-f515-4c5b-9174-1b3a9bc24e30)
 
 
 ### Q10) Rollback to save point s1;
 
+
 ### QUERY:
-```python
-sql
-rollback to A;
-```
+
 
 ### OUTPUT:
-![image](https://github.com/Lakshmipriya2005/DBMS/assets/115525361/441afff5-9f95-418b-ad8b-c2b5cfbf810d)
 
 
 ### Q11)	Create a new user and grant access to any one database with "insert and update"
 
 
 ### QUERY:
-```sql
-CREATE USER new_user;
-GRANT INSERT, UPDATE ON database_name TO new_user;
-```
+
 
 ### OUTPUT:
-![image](https://github.com/Yuvaraj878/DBMS/assets/118622554/3c3761a5-28c0-4c83-a203-89e0087e6676)
-
-![image](https://github.com/Yuvaraj878/DBMS/assets/118622554/fd08ac3a-d1a5-4a16-af6a-f3bc5ff24629)
 
 
 ### Q12) Check the user access and display the result 
 
 
 ### QUERY:
-```sql
-SHOW GRANTS FOR new_user;
-```
+
 
 ### OUTPUT:
-![image](https://github.com/Yuvaraj878/DBMS/assets/118622554/2fbd5d94-7610-4828-a072-c84372c06442)
-
 
 ### Q13) Revoke the privillages.
 
 ### QUERY:
-```sql
-SHOW GRANTS FOR new_user;
-REVOKE INSERT, UPDATE ON database_name FROM new_user;
-SHOW GRANTS FOR new_user;
-```
+
 
 ### OUTPUT:
-![image](https://github.com/Yuvaraj878/DBMS/assets/118622554/bd4b2b58-817e-42ea-b84d-a59af0382c11)
+
 
 ## RESULT :
-Thus the basic TCL and DCL commands are executed.
+Thus the basic TCL and DCL commands are executed.
